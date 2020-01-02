@@ -9,28 +9,36 @@
   </head>
 
   <body>
-
+	<div class="title">
+		<h1>My calculator</h1>
+		<h3>Part of the ODIN Project Curriculum</h3>
+	</div>
     <div class="container">
       <input placeholder="0" id="display" readonly></input>
-			<button class="row-1" id="clear">C</button>
-			<button class="row-1" id="divide">/</button>
-			<button class="row-1" id="multiply">*</button>
-			<button class="row-1" id="back"> <-- </button>
-			<button class="row-2" id="seven">7</button>
-			<button class="row-2" id="eight">8</button>
-			<button class="row-2" id ="nine">9</button>
-			<button class="row-2" id="subtract">-</button>
-			<button class="row-3" id="four">4</button>
-			<button class="row-3" id="five">5</button>
-			<button class="row-3" id="six">6</button>
-			<button class="row-3" id="add">+</button>
-			<button class="row-4" id="one">1</button>
-			<button class="row-4" id="two">2</button>
-			<button class="row-4" id="three">3</button>
-			<div class="row-4"></div>
-			<button class="row-5" id="zero">0</button>
-			<button class="row-5">.</button>
-			<button class="row-5" id="op">=</button>
+			<button class="row-1 but" id="clear">C</button>
+			<button data-key="56" class="row-1 but" id="open-p">(</button>
+			<button data-key="57" class="row-1 but" id="close-p">)</button>
+			<button data-key="8" class="row-1 but" id="back"> <-- </button>
+			<button data-key="103" class="row-2 but" id="seven">7</button>
+			<button data-key="104" class="row-2 but" id="eight">8</button>
+			<button data-key="105" class="row-2 but" id ="nine">9</button>
+			<button data-key="109" class="row-2 but" id="subtract">-</button>
+			<button data-key="100" class="row-3 but" id="four">4</button>
+			<button data-key="101" class="row-3 but" id="five">5</button>
+			<button data-key="102" class="row-3 but" id="six">6</button>
+			<button data-key="107" class="row-3 but" id="add">+</button>
+			<button data-key="97" class="row-4 but" id="one">1</button>
+			<button data-key="98" class="row-4 but" id="two">2</button>
+			<button data-key="99" class="row-4 but" id="three">3</button>
+			<button data-key="106" class="row-4 but" id="multiply">*</button>
+			<button data-key="96" class="row-5 but" id="zero">0</button>
+			<button data-key="110" class="row-5 but" id="dot">.</button>
+			<button data-key="48" class="row-5 but" id="op">=</button>
+			<button data-key="111" class="row-5 but" id="divide">/</button>
+		</div>
+		<div class="log">
+			<textarea placeholder="Your log" readonly></textarea>
+			<button>Clear log</button>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
 

@@ -46,22 +46,82 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button::-moz-focus-inner {
+    border: 0;
+  }
+  
+  
 
-/* Real shit */
+/*
+=====================
+Real shit 
+=====================
+*/
+
+body {
+    background-color: rgb(11, 17, 32);
+    font-family: sans-serif;
+}
+
+/*
+=====================
+Title
+=====================
+*/
+
+.title {
+    margin-top: 40px;
+    color: rgb(216, 210, 210);
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 35px;
+}
+
+.title h3 {
+    margin-top: 15px;
+}
+
+/*
+=====================
+Calculator
+=====================
+*/
 
 .container {
-    margin-left: 200px;
+    float: left;
+    padding: 7px 9px 7px 9px;
+    margin-left: 410px;
     margin-top: 100px;
-    width: 200px;
+    border: 2px solid #888585b2;
+    width: 230px;
 }
 
 .container #display {
+    background-color: rgb(12, 15, 15);
+    color: rgb(205, 214, 213);
     font-size: 25px;
     text-align: right;
     margin-bottom: 10px;
     padding: 5px 3px 5px 3px;
-    border: 1px solid #888585;
-    width: 200px;
+    border: 1px solid #88858588;
+    width: 223px;
+    overflow: visible;
+}
+
+.container .but {
+    background-color: rgb(20, 20, 88);
+    color: white;
+    border: 0.5px solid #88858573;
+}
+
+.container .but:hover {
+    background-color: rgba(47, 82, 148, 0.74);
+}
+
+.container .but:active {
+    background-color: rgb(47, 82, 148);
 }
 
 .container .row-1 {
@@ -93,4 +153,46 @@ table {
     float: left;
     width: 25%;
     height: 40px;
+}
+
+/*
+=====================
+Log
+=====================
+*/
+
+.log {
+    float: left;
+    margin-left: 60px;
+    margin-top: 100px;
+    height: 253px;
+    width: 190px;
+}
+
+.log textarea {
+    text-align: right;
+    background-color: rgb(9, 9, 54);
+    color: white;
+    border: 0.5px solid #88858573;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.log button {
+    float: left;
+    margin-left: 117px;
+    width: 95px;
+    height: 30px;
+    background-color: rgb(22, 24, 26);
+    color: white;
+    border: 0.5px solid #88858573;
+}
+
+.log button:hover {
+    background-color: #30333588;
+}
+
+.log button:active {
+    background-color: #303335;
 }
